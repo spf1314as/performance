@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./async.js" async>
+    
+    </script>
+    <script>
+        console.log('async')
+    </script>
+    <script defer src="./defer.js"></script>
+    <script>
+        console.log('defer')
+    </script>
+    <script src="./sync.js"></script>
+    <script>
+        console.log('sync')
+    </script>
+</head>
+<body>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quos iure placeat, molestias qui illum nesciunt iusto fugiat dolores quibusdam et corporis. Cupiditate porro itaque exercitationem dolorum nobis eos blanditiis!
+    <script>
+        console.log('end')
+    </script>
+</body>
+</html>
