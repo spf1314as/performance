@@ -1,0 +1,8 @@
+{
+  "name": "performace",
+  "version": "1.0.0",
+  "description": "web performace, for example FP、FCP、FMP、TTI、LCP",
+  "main": "index.js",
+  "author": "shengpengfei01@163.com",
+  "license": "MIT"
+}
