@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="btn1">change width</button>
+        <button id='btn2'>change width and height</button>
+    </div>
+    <div id="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor temporibus itaque architecto, hic, qui minima praesentium rem dolorum, soluta porro ratione sint enim. Eligendi optio iste natus, quaerat animi autem!
+    </div>
+    <script>
+        var btn1 = document.getElementById('btn1')
+        var btn2 = document.getElementById('btn2')
+        var container = document.querySelector('#container')
+        btn1.onclick = function () {
+            console.log(new Date())
+            var btn1Width = window.getComputedStyle(container, null).width
+            container.style.width = '1000px'
+            console.log(btn1Width)
+            var btn1Height = window.getComputedStyle(container, null).height
+            container.style.height = '600px'
+            console.log(btn1Height)
+
+        }
+        btn2.onclick = function () {
+            console.log(new Date())
+            var btn1Width = window.getComputedStyle(container, null).width
+            var btn1Height = window.getComputedStyle(container, null).height
+            container.style.width = '8000px'
+            container.style.height = '400px'
+            console.log(btn1Width, btn1Height)
+        }
+    </script>
+</body>
+</html>

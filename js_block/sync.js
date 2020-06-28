@@ -7,4 +7,4 @@
 
 
 
-console.log('sync')
+console.log('sync from sync file')

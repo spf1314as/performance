@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="./async.js" async>
-    
+    <script>
+        window.onload = function() {
+            console.log('load')
+        }
+        window.addEventListener('DOMContentLoaded', function () {
+            console.log('dom-content-loaded')
+        })
     </script>
+    <script src="./async_big.js" async> </script>
+    <script src="./async_small.js" async> </script>
     <script>
         console.log('async')
     </script>
-    <script defer src="./defer.js"></script>
+    <script src="./defer_big.js" defer></script>
+    <script src="./defer_small.js" defer></script>
     <script>
         console.log('defer')
     </script>
